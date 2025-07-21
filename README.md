@@ -661,27 +661,27 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|说明|
 |:---:|:---:|:---:|:---:|:---:|
-|abs|int abs(int x)|求整型数x的绝对值|计算结果|函数说明在stdlib.h中|
-|fabs|double fabs(double x)|求x的绝对值|计算结果||
-|sqrt|double sqrt(double x)|计算x的平方根|计算结果|要求x>=0|
-|exp|double exp(double x)|计算e<sup>x</sup>|计算结果|e为2.718...|
-|pow|double pow(double x,double y)|计算x<sup>y</sup>|计算结果||
-|log|double log(double x)|求lnx|计算结果|自然对数|
-|log10|double log10(double x)|求log<sub>10</sub>x|计算结果||
-|ceil|double ceil(double x)|求不大于x的最小整数|double类型||
-|floor|double floor(double x)|求小于x的最大整数|double类型||
-|fmod|double fmod(double x,double y)|求x/y的余数|double类型||
-|modf|double modf(double x,double *ptr)|把x分解，整数部分存入*ptr|x的小数部分||
-|sin|double sin(double x)|计算sin(x)|[-1,1]|x为弧度值|
-|cos|double cos(double x)|计算cos(x)|[-1,1]|x为弧度值|
-|tan|double tan(double x)|计算tan(x)|计算结果|x为弧度值|
-|asin|double asin(double x)|计算sin<sup>-1</sup>(x)|[0,&pi;]|x&isin;[-1,1]|
-|acos|double acos(double x)|计算cos<sup>-1</sup>(x)|[0,&pi;]|x&isin;[-1,1]|
-|atan|double atan(double x)|计算tan<sup>-1</sup>(x)|[-&pi;/2,&pi;/2]||
-|atan2|double atan2(double x,double y)|计算tan<sup>-1</sup>(x/y)|[-&pi;/2,&pi;/2]||
-|sinh|double sinh(double x)|计算sinh(x)|计算结果|x为弧度值|
-|cosh|double cosh(double x)|计算cosh(x)|计算结果|x为弧度值|
-|tanh|double tanh(double x)|计算tanh(x)|计算结果|x为弧度值|
+|abs|`int abs(int x)`|求整型数x的绝对值|计算结果|函数说明在stdlib.h中|
+|fabs|`double fabs(double x)`|求x的绝对值|计算结果||
+|sqrt|`double sqrt(double x)`|计算x的平方根|计算结果|要求x>=0|
+|exp|`double exp(double x)`|计算e<sup>x</sup>|计算结果|e为2.718...|
+|pow|`double pow(double x,double y)`|计算x<sup>y</sup>|计算结果||
+|log|`double log(double x)`|求lnx|计算结果|自然对数|
+|log10|`double log10(double x)`|求log<sub>10</sub>x|计算结果||
+|ceil|`double ceil(double x)`|求不大于x的最小整数|double类型||
+|floor|`double floor(double x)`|求小于x的最大整数|double类型||
+|fmod|`double fmod(double x,double y)`|求x/y的余数|double类型||
+|modf|`double modf(double x,double *ptr)`|把x分解，整数部分存入*ptr|x的小数部分||
+|sin|`double sin(double x)`|计算sin(x)|[-1,1]|x为弧度值|
+|cos|`double cos(double x)`|计算cos(x)|[-1,1]|x为弧度值|
+|tan|`double tan(double x)`|计算tan(x)|计算结果|x为弧度值|
+|asin|`double asin(double x)`|计算sin<sup>-1</sup>(x)|[0,&pi;]|x&isin;[-1,1]|
+|acos|`double acos(double x)`|计算cos<sup>-1</sup>(x)|[0,&pi;]|x&isin;[-1,1]|
+|atan|`double atan(double x)`|计算tan<sup>-1</sup>(x)|[-&pi;/2,&pi;/2]||
+|atan2|`double atan2(double x,double y)`|计算tan<sup>-1</sup>(x/y)|[-&pi;/2,&pi;/2]||
+|sinh|`double sinh(double x)`|计算sinh(x)|计算结果|x为弧度值|
+|cosh|`double cosh(double x)`|计算cosh(x)|计算结果|x为弧度值|
+|tanh|`double tanh(double x)`|计算tanh(x)|计算结果|x为弧度值|
 
 * 输入输出函数
 
@@ -689,38 +689,38 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|printf|int printf(char *format,输出表)|按串format给定输出格式，把输出表各表达式的值，输出到标准输出文件|成功：输出字符数 失败：EOF|
-|scanf|int scanf(char *format,输出项地址列表)|按串format给定输出格式，从标准输入文件读入数据，存入各输入项地址列表指定的存储单元|成功：输入数据的个数 失败：EOF|
-|sprintf|int sprintf(char *s,char *format,输出表)|功能类似printf()函数，单输出目标为字符串s|成功：输出字符数  失败：EOF|
-|sscanf|int sscanf(char *s,char *format,输入项地址表)|功能类似scanf()函数，但输入源为字符串s|成功：输入数据的个数 失败：EOF|
+|printf|`int printf(char *format,输出表)`|按串format给定输出格式，把输出表各表达式的值，输出到标准输出文件|成功：输出字符数 失败：EOF|
+|scanf|`int scanf(char *format,输出项地址列表)`|按串format给定输出格式，从标准输入文件读入数据，存入各输入项地址列表指定的存储单元|成功：输入数据的个数 失败：EOF|
+|sprintf|`int sprintf(char *s,char *format,输出表)`|功能类似printf()函数，单输出目标为字符串s|成功：输出字符数  失败：EOF|
+|sscanf|`int sscanf(char *s,char *format,输入项地址表)`|功能类似scanf()函数，但输入源为字符串s|成功：输入数据的个数 失败：EOF|
 
 2. 字符(串)输入输出函数
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|getchar|int getchar()|从标准输入文件读入一个字符|字符ASCII值或EOF|
-|putchar|int putchar(ch)|向标准输出文件输出字符ch|成功：ch  失败：EOF|
-|gets|char *get(char *s)|从标准输入文件读入一个字符串到字符串s，输入字符串以回车结束|成功：s  失败：NULL|
-|puts|int puts(char *s)|把字符串s输出到标注输出文件，'`\0`'转换为'`\n`'输出|成功：换行符  失败：EOF|
-|fgetc|int fgetc(FILE *fp)|从fp所指文件中读取一个字符|成功：所取字符  失败：EOF|
-|fputc|int fpuc(char ch,FILE *fp)|将字符ch输出到fp所指向的文件|成功：ch 失败：EOF|
-|fgets|char *fgets(char *s,int n,FILE *fp)|从fp所指文件最多读取n-1个字符(遇'`\n`'、'^z`终止)到字符串s中|成功：s 失败：NULL|
-|fputs|int *fputs(char *s,FILE *fp)|将字符串s输出到fp所指向文件|成功：s的末字符 失败：0|
+|getchar|`int getchar()`|从标准输入文件读入一个字符|字符ASCII值或EOF|
+|putchar|`int putchar(ch)`|向标准输出文件输出字符ch|成功：ch  失败：EOF|
+|gets|`char *get(char *s)`|从标准输入文件读入一个字符串到字符串s，输入字符串以回车结束|成功：s  失败：NULL|
+|puts|`int puts(char *s)`|把字符串s输出到标注输出文件，'`\0`'转换为'`\n`'输出|成功：换行符  失败：EOF|
+|fgetc|`int fgetc(FILE *fp)`|从fp所指文件中读取一个字符|成功：所取字符  失败：EOF|
+|fputc|`int fpuc(char ch,FILE *fp)`|将字符ch输出到fp所指向的文件|成功：ch 失败：EOF|
+|fgets|`char *fgets(char *s,int n,FILE *fp)`|从fp所指文件最多读取n-1个字符(遇'`\n`'、'^z`终止)到字符串s中|成功：s 失败：NULL|
+|fputs|`int *fputs(char *s,FILE *fp)`|将字符串s输出到fp所指向文件|成功：s的末字符 失败：0|
 
 3. 文件操作函数
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|fopen|FILE *fopen(char *fname,char *mode)|以mode方式打开文件fname|成功：文件指针 失败：NULL|
-|fclose|int fclose(FILE *fp)|关闭fp所指文件|成功：0 失败：非0|
-|feof|int feof(FILE *fp)|检查fp所指文件是否结束|是：非0 否：0|
-|fread|int fread(T *a,long sizeof(T),unsigned int n,FILE *fp)|从fp所指文件复制n*sizeof(T)个字节，到T类型指针变量a所指内存区域|成功：n 失败：0|
-|fwrite| int fwrite(T *a,long sizeof(T),unsigned int n,FILE *fp)|从T类型指针变量a所指处起复制n*sizeof(T)个字节的数据，到fp所指文件|成功：n  失败：0|
-|rewind|void rewind(FILE *fp)|移动fp所指文件读写位置到文件头||
-|fseek|int fseek(FILE *fp,long n,unsigned int posi)|移动fp所指文件读写位置，n为移位量，posi决定起点位置|成功：0 失败：非0|
-|ftell|long ftell(FILE *fp)|求当前读写位置到文件头的字节数|成功：所求字节数 失败：-1L(EOF)|
-|remove|int remove(char *fname)|删除名为fname的文件|成功：0 失败：EOF|
-|rename|int rename(char *oldfname,char *newfname)|该文件名oldfname为newfname|成功：0  失败：EOF|
+|fopen|`FILE *fopen(char *fname,char *mode)`|以mode方式打开文件fname|成功：文件指针 失败：NULL|
+|fclose|`int fclose(FILE *fp)`|关闭fp所指文件|成功：0 失败：非0|
+|feof|`int feof(FILE *fp)`|检查fp所指文件是否结束|是：非0 否：0|
+|fread|`int fread(T *a,long sizeof(T),unsigned int n,FILE *fp)`|从fp所指文件复制n*sizeof(T)个字节，到T类型指针变量a所指内存区域|成功：n 失败：0|
+|fwrite|`int fwrite(T *a,long sizeof(T),unsigned int n,FILE *fp)`|从T类型指针变量a所指处起复制n*sizeof(T)个字节的数据，到fp所指文件|成功：n  失败：0|
+|rewind|`void rewind(FILE *fp)`|移动fp所指文件读写位置到文件头||
+|fseek|`int fseek(FILE *fp,long n,unsigned int posi)`|移动fp所指文件读写位置，n为移位量，posi决定起点位置|成功：0 失败：非0|
+|ftell|`long ftell(FILE *fp)`|求当前读写位置到文件头的字节数|成功：所求字节数 失败：-1L(EOF)|
+|remove|`int remove(char *fname)`|删除名为fname的文件|成功：0 失败：EOF|
+|rename|`int rename(char *oldfname,char *newfname)`|该文件名oldfname为newfname|成功：0  失败：EOF|
 
 * 字符判别函数
 
@@ -728,18 +728,18 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|isalpha|int isalpha(char c)|判别c是否为字母字符|是：返回非0  否：返回0|
-|islower|int islower(char c)|判别c是否为小写字母|是：返回非0  否：返回0|
-|isupper|int isupper(char c)|判别c是否为大写字母|是：返回非0  否：返回0|
-|isdigit|int isdigit(char c)|判别c是否为数字字符|是：返回非0  否：返回0|
-|isalnum|int isalnum(char c)|判别c是否为字母、数字字符|是：返回非0  否：返回0|
-|isspace|int isspace(char c)|判别c是否为空格字符|是：返回非0  否：返回0|
-|iscntrl|int iscntrl(char c)|判别c是否为控制字符|是：返回非0  否：返回0|
-|isprint|int isprint(char c)|判别c是否为可打印字符|是：返回非0  否：返回0|
-|ispunct|int ispunct(char c)|判别c是否为标点字符|是：返回非0  否：返回0|
-|isgraph|int isgraph(char c)|判别c是否是除字母、数字、空格外的可打印字符|是：返回非0  否：返回0|
-|tolower|int tolower(char c)|将大写字母c转换为小写字母|c对应的小写字母|
-|toupper|int toupper(char c)|将小写字母转换为大写字母|c对应的小写字母|
+|isalpha|`int isalpha(char c)`|判别c是否为字母字符|是：返回非0  否：返回0|
+|islower|`int islower(char c)`|判别c是否为小写字母|是：返回非0  否：返回0|
+|isupper|`int isupper(char c)`|判别c是否为大写字母|是：返回非0  否：返回0|
+|isdigit|`int isdigit(char c)`|判别c是否为数字字符|是：返回非0  否：返回0|
+|isalnum|`int isalnum(char c)`|判别c是否为字母、数字字符|是：返回非0  否：返回0|
+|isspace|`int isspace(char c)`|判别c是否为空格字符|是：返回非0  否：返回0|
+|iscntrl|`int iscntrl(char c)`|判别c是否为控制字符|是：返回非0  否：返回0|
+|isprint|`int isprint(char c)`|判别c是否为可打印字符|是：返回非0  否：返回0|
+|ispunct|`int ispunct(char c)`|判别c是否为标点字符|是：返回非0  否：返回0|
+|isgraph|`int isgraph(char c)`|判别c是否是除字母、数字、空格外的可打印字符|是：返回非0  否：返回0|
+|tolower|`int tolower(char c)`|将大写字母c转换为小写字母|c对应的小写字母|
+|toupper|`int toupper(char c)`|将小写字母转换为大写字母|c对应的小写字母|
 
 * 字符串操作函数
 
@@ -747,12 +747,12 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|strcat|char *strcat(char *s,char *t)|把字符串t连接到s，使s成为包含s和t的结果串|字符串s|
-|strcmp|int strcmp(char *s,char *t)|逐个比较字符串s和t中的对应字符，知道对应字符不等或比较到串尾|相等：0  不等：不相等字符的差值|
-|strcpy|char *strcpy(char *s,char *t)|把字符串t复制到s中|字符串s|
-|strlen|unsigned int strlen(char *s)|计算字符串s的有效长度(不包括'`\0`')|字符串长度|
-|strchr|char *strchr(char *s,char c)|在字符串中查找字符c首次出现的地址|找到：相应地址 找不到：NULL|
-|strstr|char *strstr(char *s,char *t)|在字符串中查找字符串t首次出现的地址|找到：相应地址 找不到：NULL|
+|strcat|`char *strcat(char *s,char *t)`|把字符串t连接到s，使s成为包含s和t的结果串|字符串s|
+|strcmp|`int strcmp(char *s,char *t)`|逐个比较字符串s和t中的对应字符，知道对应字符不等或比较到串尾|相等：0  不等：不相等字符的差值|
+|strcpy|`char *strcpy(char *s,char *t)`|把字符串t复制到s中|字符串s|
+|strlen|`unsigned int strlen(char *s)`|计算字符串s的有效长度(不包括'`\0`')|字符串长度|
+|strchr|`char *strchr(char *s,char c)`|在字符串中查找字符c首次出现的地址|找到：相应地址 找不到：NULL|
+|strstr|`char *strstr(char *s,char *t)`|在字符串中查找字符串t首次出现的地址|找到：相应地址 找不到：NULL|
 
 * 数值转换函数
 
@@ -760,12 +760,12 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|abs|int abs(int x)|求整数x的绝对值|运算结果|
-|atof|double atof(char *s)|把字符串s转换成双精度浮点数|运算结果|
-|atoi|int atoi(char *s)|把字符串s转换成整型数|运算结果|
-|atol|long atol(char *s)|把字符串s转换成长整型数|运算结果|
-|rand|int rand()|产生一个伪随机的无符号整数|伪随机数|
-|srand|void srand(unsigned int seed)|以seed微中子(初始值)计算产生一个无符号的随机整数|随机数|
+|abs|`int abs(int x)`|求整数x的绝对值|运算结果|
+|atof|`double atof(char *s)`|把字符串s转换成双精度浮点数|运算结果|
+|atoi|`int atoi(char *s)`|把字符串s转换成整型数|运算结果|
+|atol|`long atol(char *s)`|把字符串s转换成长整型数|运算结果|
+|rand|`int rand()`|产生一个伪随机的无符号整数|伪随机数|
+|srand|`void srand(unsigned int seed)`|以seed微中子(初始值)计算产生一个无符号的随机整数|随机数|
 
 * 动态内存分配函数
 
@@ -773,10 +773,10 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|calloc|void *calloc(unsigned int n,unsigned int size)|分配n个连续存储单元(每个单元包含size个字节)|成功：分配单元首地址 失败：NULL|
-|malloc|void *malloc(unsigned int size)|分配size个字节的存储单元块|成功：分配单元块首地址 失败：NULL|
-|free|void free(void *p)|释放p所指向存储单元块(必须是由动态分配函数一次性分配的全部单元)|无|
-|realloc|void *realloc(void *p,unsigned int size)|将p所指的已分配内存单元块的大小改为size|成功：分配单元块首地址 失败：NULL|
+|calloc|`void *calloc(unsigned int n,unsigned int size)`|分配n个连续存储单元(每个单元包含size个字节)|成功：分配单元首地址 失败：NULL|
+|malloc|`void *malloc(unsigned int size)`|分配size个字节的存储单元块|成功：分配单元块首地址 失败：NULL|
+|free|`void free(void *p)`|释放p所指向存储单元块(必须是由动态分配函数一次性分配的全部单元)|无|
+|realloc|`void *realloc(void *p,unsigned int size)`|将p所指的已分配内存单元块的大小改为size|成功：分配单元块首地址 失败：NULL|
 
 * 过程控制函数
 
@@ -784,4 +784,4 @@ C语言一共有4中存储类型：auto、static、extern、register
 
 |函数名|函数定义格式|函数功能|返回值|
 |:---:|:---:|:---:|:---:|
-|exit|void exit(int status)|使程序执行立刻终止，并清除和关闭所有打开的文件。  status==0表示程序正常结束；status非0则表示程序存在错误执行|无|
+|exit|`void exit(int status)`|使程序执行立刻终止，并清除和关闭所有打开的文件。  status==0表示程序正常结束；status非0则表示程序存在错误执行|无|
