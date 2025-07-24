@@ -299,12 +299,12 @@ char *read_file_name(){
     char *name;
     char ch[2]={0,0};
     do{
-    ch[0]=getchar();
+        ch[0]=getchar();
     }while((ch[0]==' ')||(ch[0]=='\n')||(ch[0]=='\t'));
     if((name=(char *)calloc(2,sizeof(char)))==NULL){
         printf("\nERROR!");
         exit(9);
-    }    
+    }
     while((ch[0]!=' ')&&(ch[0]!='\n')&&(ch[0]!='\t')){
         if((name=(char *)realloc(name,(strlen(name)+2)*sizeof(char)))==NULL){
             printf("\nERROR!");
